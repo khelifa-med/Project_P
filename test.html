@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div onclick="click()" style="width: 40px;height: 40px; background-color: aqua; cursor: pointer;">
+     hello
+    </div> -->
+
+    <!-- <button onclick="f()" id="click" style="width: 40px;height: 40px; background-color: aqua; cursor: pointer;">
+    click
+    </button> -->
+
+
+</body>
+<script>
+    function longestAlternatingSubstring(digits)
+    {
+      
+        let numbers=''
+        let arrDigits = digits.split('')
+        let arr= []
+        // console.log(arrDigits)
+        for(let i=0 ; i<digits.lenght ; i++ )
+        {
+            let numConvert =Math.floor(digits[i])
+            let result = numConvert % 2;
+            
+            if(result == true)
+            {
+                arr.push(result)
+            }
+            
+        }
+        console.log(arr)
+        // return numbers   
+    }
+     
+   longestAlternatingSubstring('2105787220351146')
+
+</script>
+</html>
