@@ -65,6 +65,8 @@ function getLoginRegister()
    })
 
    
+
+   
 }
 
 // Register user with formData
